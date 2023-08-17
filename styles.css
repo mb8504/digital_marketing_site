@@ -26,10 +26,10 @@ header .container {
 }
 
 .logo {
-    min-height: 100px;
-    width: 120px;
-    padding: 0;
-    margin: 0;
+    height: auto;
+    width: 110px;
+    padding-top: 1rem;
+    cursor: pointer;
 }
 
 .navbar {
@@ -37,6 +37,7 @@ header .container {
     font-size: 1rem;
     align-items: flex-start;
     width: 100%;
+    display: none;
 }
 
 .navbar ul {
@@ -49,29 +50,44 @@ header .container {
 
 .navbar ul li {
     padding: .8rem 0;
-    color: #6c98fc;
-    /* display: none; */
+    color: #121212;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    color: #9bd8c9;
 }
 
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
-    right: 1rem;
+    top: 1.8rem;
+    right: 1.7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 1.9rem;
+    height: 1.7rem;
+    background: url("images/menu.png");
+    background-repeat: no-repeat;
+    border: 0;
+
 }
 
 .toggle-button .bar {
     height: 3px;
-    /* will take up 100% width inside of the toggle button container */
+    /* will take up 10 f ff0% width inside of the toggle button container */
     width: 100%; 
     background-color: black;
     border-radius: 10px;
 }
+
+.navbar.active {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 @media (min-width: 768px) {
     .toggle-button {
@@ -79,8 +95,10 @@ header .container {
     }
 
     .logo {
-        height: 180px;
+        height: auto;
         width: 200px;
+        padding: 1rem;
+        margin: 0;
     }
     header .container {
         flex-direction: row;
@@ -92,6 +110,7 @@ header .container {
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
         width: auto;
+        display: flex;
     }
     .navbar ul {
         flex-direction: row;
@@ -102,3 +121,17 @@ header .container {
     }
 }
 
+
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
