@@ -303,5 +303,76 @@ header .container {
         border-radius: 45px;
     }
 }
-
 /* END HOMEPAGE SERVICES SECTION */
+
+/* START TESTIMONIAL SLIDER */
+
+.testimonials .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.cards {
+    max-width: 14.5rem;
+}
+
+.cards img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.person-info h3 {
+    margin-top: 1rem;
+}
+.review-text .quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #3C6383;
+    margin-bottom: 1.5rem;
+}
+.ig-account, .title {
+    color: #3C6383;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        max-width: 23.5rem;
+    }
+    .testimonials .container {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .review-text {
+        padding-left: 3rem;
+    }
+    .person-info {
+        display: flex;
+    }
+    .review-text .quote {
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: bold;
+        color: #3C6383;
+        margin-bottom: 1.5rem;
+    }
+    .person-info h3 {
+        margin-top: 5rem;
+    }
+    .line {
+        border-left: thick solid #3C6383;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        height: 1.6rem;
+    }
+    .person-info h3 {
+        margin-top: 0;
+    }
+}
+
+
+
+/* END TESTIMONIAL SLIDER */
