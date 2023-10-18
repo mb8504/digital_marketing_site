@@ -336,6 +336,27 @@ header .container {
 .ig-account, .title {
     color: #3C6383;
 }
+.review-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li {
+    list-style: none;
+    display: list-item;
+}
+.review1, .review2, .review3 {
+    background: #3C6383;
+    height: 20px;
+    width: 20px;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 3rem;
+    border: 0;
+    border-radius: 100%;
+    /* background: transparent; */
+}
 
 @media (min-width: 768px) {
     .cards {
@@ -370,6 +391,12 @@ header .container {
     }
     .person-info h3 {
         margin-top: 0;
+    }
+    .review1, .review2, .review3 {
+        height: 20px;
+        width: 20px;
+        margin-top: 0;
+        /* background: transparent; */
     }
 }
 
