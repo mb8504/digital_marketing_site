@@ -311,7 +311,7 @@ header .container {
     display: flex;
     text-align: center;
     margin-top: 6rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .testimonial-card {
@@ -364,13 +364,6 @@ li {
     border-radius: 100%;
     /* background: transparent; */
 }
-.slide {
-    display: flex;
-    transition: 0.8s;
-}
-.active {
-    background: #9bd8c9;
-}
 
 @media (min-width: 768px) {
     .cards {
@@ -412,7 +405,6 @@ li {
         margin-top: 0;
         /* background: transparent; */
     }
-
 }
 
 

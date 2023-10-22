@@ -12,3 +12,7 @@ toggleButton.addEventListener('click', () => {
 });
 
 console.log(navToggle);
+
+
+
+
