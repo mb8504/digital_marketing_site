@@ -367,9 +367,16 @@ li {
 .slide {
     display: flex;
     transition: 0.8s;
+    width: 100%;
+    height: auto;
 }
 .active {
     background: #9bd8c9;
+}
+
+.testimonial2 {
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 @media (min-width: 768px) {
