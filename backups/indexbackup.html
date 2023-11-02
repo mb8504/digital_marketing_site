@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>The Marketing Spot</title>
     <script src="nav.js" defer></script>
+    <script src="testimonials.js" defer></script>
 </head>
 <body>
     <header>
@@ -103,70 +104,72 @@
     <section>
         <div class="testimonials">
             <div class="container">
-                <div class="testimonial-card">
-                    <div class="cards">
-                        <img src="images/review1.png" alt="">
-                    </div>
-                    <blockquote class="review-text">
-                        <p class="quote">
-                            "Game changer! The Marketing Spot acts as an extension of our marketing team and delivers positive results and actionable insights."
-                        </p>
-                        <div class="person-info">
-                            <h3>Laura Stevens</h3>
-                            <div></div>
-                            <div class="line"></div>
-                            <p class="ig-account">@lstevens</p>
+                <div id="slides" class="slide">
+                    <div class="testimonial-card">
+                        <div class="cards">
+                            <img src="images/review1.png" alt="">
                         </div>
-                        <p class="title">Director, Digital Marketing and Communications</p>
-                    </blockquote>
-                </div>
-                <div class="testimonial-card">
-                    <div class="cards">
-                        <img src="images/review1.png" alt="">
+                        <blockquote class="review-text">
+                            <p class="quote">
+                                "Game changer! The Marketing Spot acts as an extension of our marketing team and delivers positive results and actionable insights."
+                            </p>
+                            <div class="person-info">
+                                <h3>Laura Stevens</h3>
+                                <div></div>
+                                <div class="line"></div>
+                                <p class="ig-account">@lstevens</p>
+                            </div>
+                            <p class="title">Director, Digital Marketing and Communications</p>
+                        </blockquote>
                     </div>
-                    <blockquote class="review-text">
-                        <p class="quote">
-                            "Game changer! The Marketing Spot acts as an extension of our marketing team and delivers positive results and actionable insights."
-                        </p>
-                        <div class="person-info">
-                            <h3>Laura Stevens</h3>
-                            <div></div>
-                            <div class="line"></div>
-                            <p class="ig-account">@lstevens</p>
+                    <div class="testimonial-card testimonial2" >
+                        <div class="cards">
+                            <img src="images/review2.png" alt="">
                         </div>
-                        <p class="title">Director, Digital Marketing and Communications</p>
-                    </blockquote>
-                </div>
-                <div class="testimonial-card">
-                    <div class="cards">
-                        <img src="images/review1.png" alt="">
+                        <blockquote class="review-text">
+                            <p class="quote">
+                                "As a rising solo artist, I found myself needing to expand my team. I needed The Marketing Spot to help with in the weeds marketing that I don't have time to learn or do. This is THE spot for marketing."
+                            </p>
+                            <div class="person-info">
+                                <h3>Jason Gray</h3>
+                                <div></div>
+                                <div class="line"></div>
+                                <p class="ig-account">@livinginthegray</p>
+                            </div>
+                            <p class="title">Living in the Gray band</p>
+                        </blockquote>
                     </div>
-                    <blockquote class="review-text">
-                        <p class="quote">
-                            "Game changer! The Marketing Spot acts as an extension of our marketing team and delivers positive results and actionable insights."
-                        </p>
-                        <div class="person-info">
-                            <h3>Laura Stevens</h3>
-                            <div></div>
-                            <div class="line"></div>
-                            <p class="ig-account">@lstevens</p>
+                    <div class="testimonial-card">
+                        <div class="cards">
+                            <img src="images/review3.png" alt="">
                         </div>
-                        <p class="title">Director, Digital Marketing and Communications</p>
-                    </blockquote>
+                        <blockquote class="review-text">
+                            <p class="quote">
+                                "I needed help creating a solution for an e-commerce client. The Marketing Spot helped build the solution and even went the extra mile answering questions after the contract ended."
+                            </p>
+                            <div class="person-info">
+                                <h3>Samantha Rockfield</h3>
+                                <div></div>
+                                <div class="line"></div>
+                                <p class="ig-account">@samrocks</p>
+                            </div>
+                            <p class="title">Freelancer</p>
+                        </blockquote>
+                    </div>
                 </div>
             </div>
             <nav class="review-nav">
                 <ul>
                     <li role="presentation">
-                        <button class="review1" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 1">
+                        <button class="review1 btn active" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 1">
                         </button>
                     </li>
                     <li role="presentation">
-                        <button class="review2" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 2">
+                        <button class="review2 btn" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 2">
                         </button>
                     </li>
                     <li role="presentation">
-                        <button class="review3" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 3">
+                        <button class="review3 btn" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 3">
                         </button>
                     </li>
                 </ul>
@@ -174,14 +177,14 @@
         </div>
     </section>
 
-    <!-- <section class="paid-media">
+    <section class="cta">
         <div class="container">
             <div class="column">
-                <h2>Meet the Team</h2>
+                <h2>Ready to get to work?</h2>
             </div>
             <div class="column">
                 <p>
-                    Change happens fast and often in the world of paid media. From the IOS 17 update that removes third-party cookies like GCLID (Google Click ID) and FBID (Facebook ID) to new campaign types like Performance Max. We're here to help you navigate the paid media space and give you an actionable plan to build, measure, and convert. 
+                    We're here to help with your marketing needs. Get in touch and let's see if we're a good fit. 
                     <br>
                     <br>
                     <button>
@@ -190,8 +193,55 @@
                 </p>
             </div>
         </div>
-    </section> -->
+    </section>
 
+    <footer>
+        <div class="container">
+            <div class="services">
+                <p>Services</p>
+                <ul>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">PPC</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </div>
+            <div class="resources">
+                <p>Resources</p>
+                <UL>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </UL>
+            </div>
+            <div class="newsletter">
+                <p class="newsletter-header">Newsletter</p>
+                <p>
+                    Don't miss out on the latest digital marketing trends, best practices, and our "Marketing Skills" tutorial series that walks you through a new concept every week. 
+                </p>
+                <form id="form1_submission" class="form" action="#" method="get">
+                    <div class="email">
+                        <input type="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <button class="newsletter-button">
+                        Sign me up!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="social">
+        <div class="container">
+            <div class="social-icons">
+                <a href=""><img src="images/f_logo_RGB-Black_58.png" alt=""></a>
+                <a href=""><img src="images/instagram_icon.png" alt=""></a>
+                <a href=""><img src="images/linkedin.png" alt=""></a>
+                <a href=""><img src="images/youtube.png" alt=""></a>
+            </div>
+            <p>&copy; 2023 The Marketing Spot</p>
+        </div>
+    </div>
 
 
 </body>

@@ -311,7 +311,7 @@ header .container {
     display: flex;
     text-align: center;
     margin-top: 6rem;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .testimonial-card {
@@ -364,6 +364,20 @@ li {
     border-radius: 100%;
     /* background: transparent; */
 }
+.slide {
+    display: flex;
+    transition: 0.8s;
+    width: 100%;
+    height: auto;
+}
+.active {
+    background: #9bd8c9;
+}
+
+.testimonial2 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
 
 @media (min-width: 768px) {
     .cards {
@@ -406,7 +420,153 @@ li {
         /* background: transparent; */
     }
 }
-
-
-
 /* END TESTIMONIAL SLIDER */
+
+
+/* START CTA */
+.cta {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+/* END CTA */
+
+/* START FOOTER  */
+
+
+
+footer {
+    text-align: center;
+    padding-top: 3.75rem;
+    background-color: #393E41;
+}
+
+footer .container a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container a:hover {
+    color: #9bd8c9;
+}
+
+footer .container .services p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+footer .container .resources p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+footer .container li {
+    padding: 0.5rem;
+}
+
+.newsletter {
+    padding-top: 2.5rem;
+    color: white;
+}
+
+.newsletter .newsletter-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.form {
+    padding-top: 1.25rem;
+}
+
+::placeholder {
+    color: #a2a2a2;
+}
+
+.email {
+    padding: 0;
+}
+
+.form .email input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0rem 1rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 2.7rem;
+    background-color: transparent;
+    border-width: 0.1rem;
+    color: white;
+}
+
+.newsletter-button {
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 0.3em;
+    letter-spacing: 0.2px;
+}
+
+.newsletter-button:hover {
+    background-color: #ff0263;
+}
+
+.social-icons img {
+    height: 2.1rem;
+    width: 2.1rem;
+    margin: 0 0.625rem 2.5rem;
+}
+.social {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    text-align: center;
+    background-color: #393E41;
+    color: white;
+}
+
+@media (min-width: 768px) {
+
+    footer {
+        max-width: 100%;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* .social-icons img {
+        margin: 0 0.625rem 0;
+    } */
+    .social-icons {
+        display: flex;
+    }
+    .social .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsletter {
+        max-width: 600px;
+    }
+    .form .email input {
+        height: 3.125rem;
+        font-size: 1.2rem;
+    }
+
+    footer .container .resources p {
+        padding-top: 0px;
+    }
+}
+
+/* END FOOTER  */
