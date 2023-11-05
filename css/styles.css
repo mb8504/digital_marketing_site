@@ -80,7 +80,10 @@ header .container {
     background: url("/images/menu.png");
     background-repeat: no-repeat;
     border: 0;
+}
 
+.toggle-button.active {
+    background: url("/images/close_menu.png");
 }
 
 .toggle-button .bar {
@@ -672,11 +675,17 @@ body .services-header {
     letter-spacing: 0.7rem;
 }
 
+.services-header .navbar.active {
+    display: flex;
+    justify-content: center;
+    background: rgba(57, 62, 65, .5);
+}
 
-
+.services-container .toggle-button.active {
+    background: url("/images/services images/close_menu_white.png");
+}
 
 @media (min-width: 768px) {
-    
     .services-hero {
         background-image: url('/images/services images/services_hero.png'); /* Add your hero image here */
         background-size: cover;
@@ -684,13 +693,11 @@ body .services-header {
         text-align: center;
         color: #fff;
     }
-    
     .services-hero {
         padding-top: 22.8rem;
         text-align: left;
         padding-bottom: 0.6rem;
     }
-    
     .services-hero h1 {
         max-width: 1400px;
         margin: 0 auto;
@@ -701,8 +708,6 @@ body .services-header {
         color: white;
         letter-spacing: 0.7rem;
     }
-    
-
 }
 
 
