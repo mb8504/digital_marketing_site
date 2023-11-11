@@ -709,7 +709,60 @@ body .services-header {
         letter-spacing: 0.7rem;
     }
 }
-
-
-
 /* END SERVICES PAGE – TOP */
+
+
+/* START SERVICES PAGE – PPC */
+
+.text-left-img-right {
+    text-align: center;
+}
+
+.text-right-img-left {
+    text-align: center;
+}
+
+#services-analytics {
+    margin-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+    .text-left-img-right .container .column p{
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+    .overview, .text-left-img-right, .paid-media {
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .text-left-img-right .container {
+        flex-direction: row-reverse;
+        margin-top: 3rem;
+    }
+    .text-right-img-left .container .column p{
+        padding-left: 4rem;
+        padding-right: 2rem;
+    }
+    .overview, .text-right-img-left, .paid-media {
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .text-right-img-left .container {
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+    .text-right-img-left .container .column img {
+        margin-right: 4rem;
+        margin-left: 0;
+    }
+    .text-right-img-left .container .column h2 {
+        padding-left: 4rem;
+        padding-right: 2rem;
+    }
+}
+
+/* END SERVICES PAGE – PPC */
+
+
+
+
