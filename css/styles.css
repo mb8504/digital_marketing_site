@@ -179,6 +179,11 @@ header .container {
     font-weight: bold;
 }
 
+.hero-text button a {
+    text-decoration: none;
+    color: white;
+}
+
 @media (min-width: 768px) {
     .hero-image {
         margin-top: 0;
@@ -254,6 +259,11 @@ header .container {
     cursor: pointer;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+}
+
+.container .column button a {
+    text-decoration: none;
+    color: #393E41;
 }
 
 
@@ -651,7 +661,7 @@ body .services-header {
 }
 
 .services-hero {
-    background-image: url('/images/services images/services_hero.png'); /* Add your hero image here */
+    background-image: url('/images/services images/services_hero.jpg'); /* Add your hero image here */
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -687,7 +697,7 @@ body .services-header {
 
 @media (min-width: 768px) {
     .services-hero {
-        background-image: url('/images/services images/services_hero.png'); /* Add your hero image here */
+        background-image: url('/images/services images/services_hero.jpg'); /* Add your hero image here */
         background-size: cover;
         background-position: center;
         text-align: center;
