@@ -736,6 +736,42 @@ body .services-header {
     margin-bottom: 10rem;
 }
 
+.content-group-header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 1rem;
+    justify-content: center;
+    /* position: relative; */
+}
+.content-group-header h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.content-group-header i {
+    /* position: absolute; */
+    left: 2rem;
+    top: 0.2rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.content-body {
+    display: none;
+}
+
+.content-body ul li {
+    padding-bottom: 1rem;
+}
+
+.content-body.open {
+    display: block;
+}
+
+.content-group-header {
+    cursor: pointer;
+}
+
+
 @media (min-width: 768px) {
     .text-left-img-right .container .column p{
         padding-left: 2rem;
@@ -769,7 +805,40 @@ body .services-header {
         padding-left: 4rem;
         padding-right: 2rem;
     }
+    .content-left {
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+    .content-right {
+        padding-left: 4rem;
+        padding-right: 2rem;
+    }
+    .content-group-header {
+        padding-bottom: 1rem;
+        /* position: relative; */
+    }
+    .content-group-header h4 {
+        font-weight: 600;
+        width: 95%;
+        padding-left: 2.5rem;
+    }
+    .content-group-header i {
+        /* position: absolute; */
+        left: 0;
+        top: 0.2rem;
+        padding-right: 0;
+    }
+    .services-btn, .social-btn {
+        margin-left: 2rem;
+    }
+    .seo-btn, .analytics-btn {
+        margin-left: 4rem; 
+    }
+
 }
+
+
+
 
 /* END SERVICES PAGE – PPC */
 
