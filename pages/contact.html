@@ -6,13 +6,15 @@
     <meta name="description"
         content="An award-winning digital marketing agency specializing in social media, PPC, SEO, web developement, and more. ">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>The Marketing Spot</title>
     <script src="/js/nav.js" defer></script>
     <script src="/js/testimonials.js" defer></script>
+    <script src="/js/services.js" defer></script>
 </head>
 <body>
-    <header class="services-header">
-        <div class="container services-container">
+    <header class="contact-header">
+        <div class="container contact-container">
             <a href="/index.html"><img class="logo" src="/images/services images/The Marketing Spot-logos_white.png" alt=""></a>
             <button id="mobile-toggle-button" class="toggle-button" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
             <nav id="mobile-navbar" class="navbar">
@@ -26,33 +28,46 @@
         </div>
     </header>
 
-    <section class="services-hero">
+    <section class="contact-hero">
         <h1>
             <span>Contact</span>
         </h1>
     </section>
 
-    <section id="services-ppc" class="text-left-img-right">
+    <section class="text-left-img-right contact-section">
         <div class="container">
             <div class="column">
-                <img src="/images/services images/ppc_services.png" alt="">
+                <img 
+                    src="/images/contact images/contact_form_image.png"
+                    srcset="" 
+                    alt="">
             </div>
             <div class="column">
-                <h2 id="ppc">PPC</h2>
+                <h2>Ready to Grow Your Business?</h2>
                 <p>
-                    Looking for someone to handle your paid media campaigns? Maybe you just need additional staff and a team to help you think through your strategies. We're here to help! 
+                    The Marketing Spot is a digital marketing agency specializing in PPC, SEO, social media, and marketing analytics. Our team creates and manages campaigns and gives you actionable insights. 
                     <br>
                     <br>
-                    <button>
-                        Contact Us Today
-                    </button>
+                    <form action="process.php" method="POST">
+                        <label id="lblFirstName">First Name: <div class="asterisk">*</div></label>
+                        <input id="first-name" type="text" name="first-name" maxlength="255" aria-labelledby="lblFirstName" required>
+
+                        <label id="lblLastName">Last Name: <div class="asterisk">*</div></label>
+                        <input type="text" name="last-name" maxlength="255" aria-labelledby="lblLastName" required>
+
+                        <label id="lblEmail">Email: <div class="asterisk">*</div></label>
+                        <input type="email" name="email" maxlength="255" aria-labelledby="lblEmail" required>
+
+                        <label id="lblMessage">Tell us what you're looking for: <div class="asterisk">*</div></label>
+                        <textarea placeholder="Leave us a message" class="message" name="" id="" cols="30" rows="5"></textarea>
+
+                        <input class="submit-btn" type="submit" name="submit" value="Get Started!">
+                        
+                    </form>
                 </p>
             </div>  
         </div>
     </section>
-
-
-
 
     <footer>
         <div class="container">

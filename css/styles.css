@@ -836,12 +836,150 @@ body .services-header {
     }
 
 }
-
-
-
-
 /* END SERVICES PAGE – PPC */
 
 
+/* START CONTACT PAGE */
+
+body .contact-header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.contact-header .contact-container {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-header .navbar ul li a {
+    color: white;
+}
+
+.contact-header .contact-container .toggle-button {
+    background: url("/images/services images/menu_white.png");
+}
+
+.contact-hero {
+    background-image: url('/images/contact images/mobile_hero_contact.png'); /* Add your hero image here */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-hero {
+    padding-top: 19.8rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.contact-hero h1 {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.8rem;
+    align-items: center;
+    font-size: 2.5rem;
+    padding-bottom: 2.6rem;
+    color: white;
+    letter-spacing: 0.7rem;
+}
+
+.contact-header .navbar.active {
+    display: flex;
+    justify-content: center;
+    background: rgba(57, 62, 65, .5);
+}
+
+.contact-container .toggle-button.active {
+    background: url("/images/services images/close_menu_white.png");
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+label {
+    display: flex;
+    justify-content: left;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #393E41;
+    border-radius: 3.125rem;
+}
+
+.asterisk {
+    color: #E94F37;
+}
+
+.contact-section img {
+    display: none;
+}
+
+form .submit-btn {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    background-color: #393E41;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+.customer-needs {
+    justify-content: center;
+}
+
+.message {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #393E41;
+    border-radius: 0;
+}
 
 
+@media (min-width: 768px) {
+    .contact-hero {
+        background-image: url('/images/contact images/contact_image.png'); /* Add your hero image here */
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: #fff;
+    }
+    .contact-hero {
+        padding-top: 22.8rem;
+        text-align: left;
+        padding-bottom: 0.6rem;
+    }
+    .contact-hero h1 {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1.8rem;
+        align-items: center;
+        font-size: 4rem;
+        padding-bottom: 2.6rem;
+        color: white;
+        letter-spacing: 0.7rem;
+    }
+    .contact-section img {
+        display: block;
+    }
+    form {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1.8rem;
+        align-items: center;
+    }
+}
+
+
+
+
+/* END CONTACT PAGE */
