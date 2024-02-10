@@ -148,7 +148,7 @@ header .container {
 /* START HERO */
 .hero-image {
     margin-top: 1rem;
-    background-image: url(images/hero1.jpg);
+    background-image: url(../images/hero1.jpg);
     background-size: cover;
     background-position: center;
     height: 25rem;
