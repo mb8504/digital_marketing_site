@@ -860,11 +860,11 @@ body .contact-header {
 }
 
 .contact-header .contact-container .toggle-button {
-    background: url("/images/services images/menu_white.png");
+    background: url("../images/services images/menu_white.png");
 }
 
 .contact-hero {
-    background-image: url('/images/contact images/mobile_hero_contact.png'); /* Add your hero image here */
+    background-image: url('../images/contact images/mobile_hero_contact.png'); /* Add your hero image here */
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -895,7 +895,7 @@ body .contact-header {
 }
 
 .contact-container .toggle-button.active {
-    background: url("/images/services images/close_menu_white.png");
+    background: url("../images/services images/close_menu_white.png");
 }
 
 h2 {
@@ -947,7 +947,7 @@ form .submit-btn {
 
 @media (min-width: 768px) {
     .contact-hero {
-        background-image: url('/images/contact images/contact_image.png'); /* Add your hero image here */
+        background-image: url('../images/contact images/contact_image.png'); /* Add your hero image here */
         background-size: cover;
         background-position: center;
         text-align: center;
