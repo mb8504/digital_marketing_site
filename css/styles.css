@@ -657,7 +657,7 @@ body .services-header {
 }
 
 .services-header .services-container .toggle-button {
-    background: url("/images/services images/menu_white.png");
+    background: url("../images/services images/menu_white.png");
 }
 
 .services-hero {
@@ -692,12 +692,12 @@ body .services-header {
 }
 
 .services-container .toggle-button.active {
-    background: url("/images/services images/close_menu_white.png");
+    background: url("../images/services images/close_menu_white.png");
 }
 
 @media (min-width: 768px) {
     .services-hero {
-        background-image: url('/images/services images/services_hero.jpg'); /* Add your hero image here */
+        background-image: url('../images/services images/services_hero.jpg'); /* Add your hero image here */
         background-size: cover;
         background-position: center;
         text-align: center;
