@@ -661,7 +661,7 @@ body .services-header {
 }
 
 .services-hero {
-    background-image: url('../../../images/services images/services_hero.jpg');
+    background-image: url('../images/services images/services_hero.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
