@@ -747,6 +747,11 @@ body .services-header {
     font-weight: 600;
     font-size: 1.2rem;
 }
+
+.content-group-header h4:hover {
+    color: #9bd8c9;
+}
+
 .content-group-header i {
     /* position: absolute; */
     left: 2rem;
