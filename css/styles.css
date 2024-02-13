@@ -77,13 +77,13 @@ header .container {
     justify-content: space-between;
     width: 1.9rem;
     height: 1.7rem;
-    background: url("/images/menu.png");
+    background: url("../images/menu.png");
     background-repeat: no-repeat;
     border: 0;
 }
 
 .toggle-button.active {
-    background: url("/images/close_menu.png");
+    background: url("../images/close_menu.png");
 }
 
 .toggle-button .bar {
