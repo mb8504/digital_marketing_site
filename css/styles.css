@@ -748,10 +748,6 @@ body .services-header {
     font-size: 1.2rem;
 }
 
-.content-group-header h4:hover {
-    color: #9bd8c9;
-}
-
 .content-group-header i {
     /* position: absolute; */
     left: 2rem;
@@ -826,6 +822,9 @@ body .services-header {
         font-weight: 600;
         width: 95%;
         padding-left: 2.5rem;
+    }
+    .content-group-header h4:hover {
+        color: #9bd8c9;
     }
     .content-group-header i {
         /* position: absolute; */
