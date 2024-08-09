@@ -6,6 +6,7 @@
     <meta name="description"
         content="An award-winning digital marketing agency specializing in social media, PPC, SEO, web developement, and more. ">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
     <title>The Marketing Spot</title>
     <script src="js/nav.js" defer></script>
     <script src="js/testimonials.js" defer></script>
@@ -100,80 +101,60 @@
         </div>
     </section>
 
-    <section>
-        <div class="testimonials">
-            <div class="container">
-                <div id="slides" class="slide">
-                    <div class="testimonial-card">
-                        <div class="cards">
-                            <img src="images/review1.png" alt="Headshot of Laura Stevens, Director, Digital Marketing and Commuications">
+    <section class="testimonials">
+        <ul class="slider">
+            <li>
+                <div class="slider__li">
+                    <img class="slider__image" src="images/review1.png" alt="Headshot of Laura Stevens, Director, Digital Marketing and Commuications">
+                    <blockquote class="review-text">
+                        <p class="quote">
+                            "Game changer! The Marketing Spot acts as an extension of our marketing team and delivers positive results and actionable insights."
+                        </p>
+                        <div class="person-info">
+                            <h3>Laura Stevens</h3>
+                            <div></div>
+                            <div class="line"></div>
+                            <p class="ig-account">@lstevens</p>
                         </div>
-                        <blockquote class="review-text">
-                            <p class="quote">
-                                "Game changer! The Marketing Spot acts as an extension of our marketing team and delivers positive results and actionable insights."
-                            </p>
-                            <div class="person-info">
-                                <h3>Laura Stevens</h3>
-                                <div></div>
-                                <div class="line"></div>
-                                <p class="ig-account">@lstevens</p>
-                            </div>
-                            <p class="title">Director, Digital Marketing and Communications</p>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial-card testimonial2" >
-                        <div class="cards">
-                            <img src="images/review2.png" alt="Headshot of Jason Gray of Living in the Gray band">
-                        </div>
-                        <blockquote class="review-text">
-                            <p class="quote">
-                                "As a rising solo artist, I found myself needing to expand my team. I needed The Marketing Spot to help with in the weeds marketing that I don't have time to learn or do. This is THE spot for marketing."
-                            </p>
-                            <div class="person-info">
-                                <h3>Jason Gray</h3>
-                                <div></div>
-                                <div class="line"></div>
-                                <p class="ig-account">@livinginthegray</p>
-                            </div>
-                            <p class="title">Living in the Gray band</p>
-                        </blockquote>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="cards">
-                            <img src="images/review3.png" alt="Headshot of Samantha Rockfield, freelancer">
-                        </div>
-                        <blockquote class="review-text">
-                            <p class="quote">
-                                "I needed help creating a solution for an e-commerce client. The Marketing Spot helped build the solution and even went the extra mile answering questions after the contract ended."
-                            </p>
-                            <div class="person-info">
-                                <h3>Samantha Rockfield</h3>
-                                <div></div>
-                                <div class="line"></div>
-                                <p class="ig-account">@samrocks</p>
-                            </div>
-                            <p class="title">Freelancer</p>
-                        </blockquote>
-                    </div>
+                        <p class="title">Director, Digital Marketing and Communications</p>
+                    </blockquote>
                 </div>
-            </div>
-            <nav class="review-nav">
-                <ul>
-                    <li role="presentation">
-                        <button class="review1 btn active" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 1">
-                        </button>
-                    </li>
-                    <li role="presentation">
-                        <button class="review2 btn" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 2">
-                        </button>
-                    </li>
-                    <li role="presentation">
-                        <button class="review3 btn" type="button" role="tab" tabindex="" aria-selected="" aria-label="Review 3">
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+            </li>
+            <li>
+                <div class="slider__li">
+                    <img class="slider__image" src="images/review2.png" alt="Headshot of Jason Gray of Living in the Gray band">
+                    <blockquote class="review-text">
+                        <p class="quote">
+                            "As a rising solo artist, I found myself needing to expand my team. I needed The Marketing Spot to help with in the weeds marketing that I don't have time to learn or do. This is THE spot for marketing."
+                        </p>
+                        <div class="person-info">
+                            <h3>Jason Gray</h3>
+                            <div></div>
+                            <div class="line"></div>
+                            <p class="ig-account">@livinginthegray</p>
+                        </div>
+                        <p class="title">Living in the Gray band</p>
+                    </blockquote>
+                </div>
+            </li>
+            <li>
+                <div class="slider__li">
+                    <img class="slider__image" src="images/review3.png" alt="Headshot of Laura Stevens, Director, Digital Marketing and Commuications">
+                    <blockquote class="review-text">
+                        <p class="quote">
+                            "I needed help creating a solution for an e-commerce client. The Marketing Spot helped build the solution and even went the extra mile answering questions after the contract ended."
+                        </p>
+                        <div class="person-info">
+                            <h3>Samantha Rockfield</h3>
+                            <div></div>
+                            <div class="line"></div>
+                            <p class="ig-account">@samrocks</p>
+                        </div>
+                        <p class="title">Freelancer</p>
+                    </blockquote>
+                </div>
+            </li>
+          </ul>
     </section>
 
     <section class="cta">
@@ -250,6 +231,6 @@
     </footer>
 
 
-
+    <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
 </body>
 </html>

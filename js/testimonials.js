@@ -1,49 +1,25 @@
-const btn = document.getElementsByClassName('btn');
+const firstButton = document.getElementById('dot1');
+const secondButton = document.getElementById('dot2');
+const thirdButton = document.getElementById('dot3');
+
 const slide = document.getElementById('slides');
-const btnClick = document.querySelectorAll('.btn');
-let mediaQuery = window. matchMedia('(min-width: 768px)');
 
-function handleMediaQueryChange(event) {
-    // Media query is matched (e.g., screen width is <= 768px)
-    // Your JavaScript code here
-    if (event.matches) {
-        // then log the following message to the console
-        btn[0].onclick = function() {
-            slide.style.transform = 'translateX(0px)';
-        }
-        btn[1].onclick = function() {
-            slide.style.transform = 'translateX(-1368px)';
-        }
-        btn[2].onclick = function() {
-            slide.style.transform = 'translateX(-2766px)';
-        }
-        
-        btnClick.forEach(activeBtn => {
-            activeBtn.addEventListener('click', () => {
-                document.querySelector('.active').classList.remove('active');
-                activeBtn.classList.add('active');
-            });
-        });
-    } else {
-        btn[0].onclick = function() {
-            slide.style.transform = 'translateX(0px)';
-        }
-        btn[1].onclick = function() {
-            slide.style.transform = 'translateX(-336px)';
-        }
-        btn[2].onclick = function() {
-            slide.style.transform = 'translateX(-674px)';
-        }
-        
-        btnClick.forEach(activeBtn => {
-            activeBtn.addEventListener('click', () => {
-                document.querySelector('.active').classList.remove('active');
-                activeBtn.classList.add('active');
-            });
-        });
-    }
-}
+const slider = new A11YSlider(document.querySelector('.slider'), {
+    adaptiveHeight: true,
+    dots: true
+  });
 
-mediaQuery.addListener(handleMediaQueryChange);
+firstButton.addEventListener('click', () => {
+    console.log('First dot clicked');
+    slide.style.transform = 'translateX(0px)';
+});
 
-handleMediaQueryChange(mediaQuery);
+secondButton.addEventListener('click', () => {
+    console.log('Second dot clicked');
+    slide.style.transform = 'translateX(-1368px)'
+});
+
+thirdButton.addEventListener('click', () => {
+    console.log('Third dot clicked');
+    slide.style.transform = 'translateX(-2766px)';
+});
