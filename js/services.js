@@ -1,83 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const contentContainer = document.querySelector('.ppc-content');
+const myFunction =(arg) => {
+    const contentContainer = document.querySelector(arg);
 
     contentContainer.addEventListener('click', (e) => {
-        const groupHeader = e.target.closest('.content-group-header');
-        
-        if(!groupHeader) return;
+        const clickedElement = e.target.closest('.content-group-header');
 
-        const group = groupHeader.parentElement;
-        const groupBody = group.querySelector('.content-body');
-        const icon = groupHeader.querySelector('i');
-
-        // Toggle icon
-        icon.classList.toggle('fa-plus');
-        icon.classList.toggle('fa-minus');
-
-        // Toggle visibility of body
-        groupBody.classList.toggle('open');
+        clickedElement.querySelector('i').classList.toggle('fa-plus');
+        clickedElement.querySelector('i').classList.toggle('fa-minus');
+        clickedElement.nextElementSibling.classList.toggle('open');
     });
-});
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-    const contentContainer = document.querySelector('.seo-content');
+document.addEventListener('DOMContentLoaded', () => myFunction('.ppc-content'));
+document.addEventListener('DOMContentLoaded', () => myFunction('.seo-content'));
+document.addEventListener('DOMContentLoaded', () => myFunction('.social-content'));
+document.addEventListener('DOMContentLoaded', () => myFunction('.analytics-content'));
 
-    contentContainer.addEventListener('click', (e) => {
-        const groupHeader = e.target.closest('.content-group-header');
-        
-        if(!groupHeader) return;
 
-        const group = groupHeader.parentElement;
-        const groupBody = group.querySelector('.content-body');
-        const icon = groupHeader.querySelector('i');
-
-        // Toggle icon
-        icon.classList.toggle('fa-plus');
-        icon.classList.toggle('fa-minus');
-
-        // Toggle visibility of body
-        groupBody.classList.toggle('open');
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const contentContainer = document.querySelector('.social-content');
-
-    contentContainer.addEventListener('click', (e) => {
-        const groupHeader = e.target.closest('.content-group-header');
-        
-        if(!groupHeader) return;
-
-        const group = groupHeader.parentElement;
-        const groupBody = group.querySelector('.content-body');
-        const icon = groupHeader.querySelector('i');
-
-        // Toggle icon
-        icon.classList.toggle('fa-plus');
-        icon.classList.toggle('fa-minus');
-
-        // Toggle visibility of body
-        groupBody.classList.toggle('open');
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const contentContainer = document.querySelector('.analytics-content');
-
-    contentContainer.addEventListener('click', (e) => {
-        const groupHeader = e.target.closest('.content-group-header');
-        
-        if(!groupHeader) return;
-
-        const group = groupHeader.parentElement;
-        const groupBody = group.querySelector('.content-body');
-        const icon = groupHeader.querySelector('i');
-
-        // Toggle icon
-        icon.classList.toggle('fa-plus');
-        icon.classList.toggle('fa-minus');
-
-        // Toggle visibility of body
-        groupBody.classList.toggle('open');
-    });
-});
